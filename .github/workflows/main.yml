@@ -18,7 +18,7 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
 
       - name: Git install
-        run: apt-get update
+        run: sudo apt-get update
 
       - name: Check files
         run: ls
