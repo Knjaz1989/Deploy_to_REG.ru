@@ -19,8 +19,9 @@ jobs:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
-          script: apt-get update
-#          sudo apt install docker-compose
+          script: |
+            apt-get update
+            apt-get install docker-compose
 
 #      - name: Update
 #        run: sudo apt-get update
