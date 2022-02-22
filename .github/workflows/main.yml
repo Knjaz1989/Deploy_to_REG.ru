@@ -17,5 +17,8 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
 
-      - name: Check Docker-compose
+      - name: Update
+        run: apt update
+
+      - name: Check files
         run: ls
