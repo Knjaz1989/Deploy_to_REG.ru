@@ -10,5 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check Docker-compose
-        run: apt-get install docker-compose
+      - nane: Login in server
+        run: ssh root@31.31.199.129
+
+#      - name: Check Docker-compose
+#        run: apt-get install docker-compose
