@@ -22,7 +22,7 @@ jobs:
           script: |
             cd my_project
             docker-compose up -d
-            docker-compose ps
+            docker-compose ps 
 
 #      - name: Update
 #        run: sudo apt-get update
