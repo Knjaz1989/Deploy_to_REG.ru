@@ -11,7 +11,11 @@ jobs:
 
     steps:
       - name: Login in server
-        run: ssh root@31.31.199.129
+        uses: appleboy/ssh-action@master
+          with:
+            username: ${{ secrets.SERVER_USERNAME }}
+            key: ${{ secrets.SERVER_PASSWORD }}
+#            port: ${{ secrets.SERVER_PORT }}
 
 #      - name: Check Docker-compose
 #        run: apt-get install docker-compose
