@@ -18,4 +18,4 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
 
       - name: Check Docker-compose
-        run: dpkg -s docker-compose
+        run: dpkg-query -l docker-compose
