@@ -19,17 +19,18 @@ jobs:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
+        script: ls
 
-      - name: Update
-        run: sudo apt-get update
-
-      - name: Install docker-compose
-        run: sudo apt-get install docker-compose
-
-      - name: check files
-        run: ls
-
-      - name: docker run
-        run: docker-compose up -d
+#      - name: Update
+#        run: sudo apt-get update
+#
+#      - name: Install docker-compose
+#        run: sudo apt-get install docker-compose
+#
+#      - name: check files
+#        run: ls
+#
+#      - name: docker run
+#        run: docker-compose up -d
 #      - name: Clone repository
 #        run: git clone https://github.com/Knjaz1989/Deploy_to_REG.ru.git ./
