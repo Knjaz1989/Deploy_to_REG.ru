@@ -18,4 +18,4 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
 
       - name: Check Docker-compose
-        run: apt-get install docker-compose
+        run: ls
