@@ -1,0 +1,14 @@
+name: Deploy to REG.ru
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+
+  build:
+    run-on: ubuntu-latest
+
+    steps:
+      - name: Check Docker-compose
+        run: apt-get install docker-compose
