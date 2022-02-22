@@ -16,7 +16,6 @@ jobs:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
-#            port: ${{ secrets.SERVER_PORT }}
 
-#      - name: Check Docker-compose
-#        run: apt-get install docker-compose
+      - name: Check Docker-compose
+        run: dpkg -s docker-compose
