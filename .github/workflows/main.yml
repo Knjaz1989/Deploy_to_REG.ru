@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
       - name: Login in server
         uses: appleboy/ssh-action@master
         with:
@@ -23,5 +26,7 @@ jobs:
       - name: Install docker-compose
         run: sudo apt-get install docker-compose
 
-      - name: Clone repository
-        run: git clone https://github.com/Knjaz1989/Deploy_to_REG.ru.git ./
+      - name: docker run
+        run: docker-compose up -d
+#      - name: Clone repository
+#        run: git clone https://github.com/Knjaz1989/Deploy_to_REG.ru.git ./
