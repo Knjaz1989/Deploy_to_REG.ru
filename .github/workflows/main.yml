@@ -17,8 +17,8 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
 
-      - name: Git install
+      - name: Update
         run: sudo apt-get update
 
-      - name: Check files
-        run: ls
+      - name: Check pacages
+        run: apt list
