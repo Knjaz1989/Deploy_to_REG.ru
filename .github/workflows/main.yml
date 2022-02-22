@@ -20,5 +20,5 @@ jobs:
       - name: Update
         run: sudo apt-get update
 
-      - name: Check pacages
-        run: sudo dpkg-query -l docker-compose
+      - name: Install docker-compose
+        run: sudo apt-get install docker-compose
