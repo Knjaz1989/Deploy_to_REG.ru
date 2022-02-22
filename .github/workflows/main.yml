@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - nane: Login in server
+      - name: Login in server
         run: ssh root@31.31.199.129
 
 #      - name: Check Docker-compose
