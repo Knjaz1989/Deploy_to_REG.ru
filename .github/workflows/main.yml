@@ -20,8 +20,8 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
-            ls
             cd my_project
+            ls
             docker-compose up -d
             docker-compose ps 
 
